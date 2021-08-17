@@ -80,21 +80,6 @@ const Hotels = () => {
   );
 };
 
-const Rooms = () => {
-  return (
-    <div>
-      <h3>Rooms</h3>
-      <h3>Rooms</h3>
-      <h3>Rooms</h3>
-      <h3>Rooms</h3>
-      <h3>Rooms</h3>
-      <h3>Rooms</h3>
-      <h3>Rooms</h3>
-      <h3>Rooms</h3>
-    </div>
-  );
-};
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -346,6 +331,7 @@ export default function MiniDrawer() {
                         key={subItem.name}
                         component={Link}
                         to={subItem.link}
+                        className="text-decoration-none"
                       >
                         <ListItem button className={classes.nested}>
                           <ListItemIcon>
